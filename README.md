@@ -1,55 +1,83 @@
-
 # Spring Boot JWT Token
 
-## 📌 Overview
-This project demonstrates how to implement JWT (JSON Web Token) authentication in Spring Boot using Spring Security. It provides secure APIs by generating and validating JWT tokens after successful user authentication.
+A Spring Boot application that demonstrates secure authentication and authorization using JSON Web Tokens (JWT) with Spring Security.
 
 ## 🚀 Features
+
 - User Registration
-- User Login
+- User Login Authentication
 - JWT Token Generation
 - JWT Token Validation
-- Spring Security Integration
-- Password Encryption using BCrypt
-- Role-Based Authorization (Admin/User)
+- Spring Security Configuration
+- BCrypt Password Encryption
+- Role-Based Authorization (ADMIN & USER)
 - Protected REST APIs
-- Exception Handling
+- Global Exception Handling
+- MySQL Database Integration
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
+
 - Java 21
 - Spring Boot
 - Spring Security
-- JWT
-- Maven
+- JWT (JSON Web Token)
+- Spring Data JPA
+- Hibernate
 - MySQL
-- JPA/Hibernate
+- Maven
+- Postman
 
-## 📂 Project Structure
-- Controller
-- Service
-- Repository
-- Entity
-- Configuration
-- Security
-- Exception Handling
+## 📁 Project Structure
+
+```
+src
+ ├── controller
+ ├── service
+ ├── repository
+ ├── entity
+ ├── config
+ ├── security
+ ├── exception
+ └── resources
+```
 
 ## 🔑 API Endpoints
 
 ### Public APIs
-- POST /save
-- POST /login
+- POST `/save` – Register a new user
+- POST `/login` – Authenticate user and generate JWT token
 
 ### Protected APIs
-- GET /admin
-- GET /user
+- GET `/admin` – Accessible only by ADMIN
+- GET `/user` – Accessible by authenticated users
 
-## ▶️ How to Run
-1. Clone the repository.
-2. Configure MySQL in `application.properties`.
-3. Run the Spring Boot application.
-4. Test APIs using Postman.
+## ▶️ Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/madihaazamahmed-droid/springboot-jwt-token.git
+   ```
+
+2. Configure your MySQL database in `application.properties`.
+
+3. Build and run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. Test the endpoints using Postman.
+
+## 📌 Key Concepts
+
+- JWT Authentication
+- Spring Security
+- Role-Based Access Control
+- Password Encryption using BCrypt
+- RESTful API Development
+- Exception Handling
 
 ## 👩‍💻 Author
-Madiha Azam Ahmed
 
+**Madiha Azam Ahmed**
 
+If you found this project helpful, consider giving it a ⭐.
